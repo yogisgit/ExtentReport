@@ -5,6 +5,16 @@
 <listeners>
 	<listener class-name="FrameworkTest.Listener"/>
 </listeners>
+<test name="ContactValidation">
+    <classes>
+      <class name="FrameworkTest.ValidateContactLandingPage"/>
+    </classes>
+  </test>
+  <test name="Login">
+    <classes>
+      <class name="FrameworkTest.Login"/>
+      </classes>
+  </test>
   <test name="ValidateText">
     <classes>
       <class name="FrameworkTest.ValidateTextLandingPage"/>
