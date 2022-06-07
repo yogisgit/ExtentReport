@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="FrameworkTest.ValidateTextLandingPage">
+      <class name="FrameworkTest.Login">
         <methods>
-          <include name="initialize"/>
-          <include name="validate"/>
+          <include name="login" invocation-numbers="0 1"/>
           <include name="tearDown"/>
+          <include name="initialize"/>
         </methods>
-      </class> <!-- FrameworkTest.ValidateTextLandingPage -->
+      </class> <!-- FrameworkTest.Login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
