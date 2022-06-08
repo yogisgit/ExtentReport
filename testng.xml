@@ -15,9 +15,9 @@
       <class name="FrameworkTest.Login"/>
       </classes>
   </test>
-  <test name="Login">
+  <test name="cricbuzz">
     <classes>
-      <class name="com.cricbuzz,tests.HomePageTest"/>
+      <class name="com.cricbuzz.tests.HomePageTest"/>
       </classes>
   </test>
   <test name="ValidateText">
