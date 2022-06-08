@@ -25,6 +25,7 @@ public class BaseDriver {
 		
 		prop.load(fis);
 		String browserName = prop.getProperty("browser");
+		String url = prop.getProperty("urlcricbuzz");
 		//String browserName = System.getProperty("browser");
 		
 		//creating object of chrome options for usage of headless mode
@@ -47,6 +48,7 @@ public class BaseDriver {
 			System.setProperty("WebDriver.ChromeDriver", System.getProperty("user.dir")+"/chromedriver");
 			driver = new ChromeDriver();
 		}
+		driver.get(url);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		return driver;
 	}

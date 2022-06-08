@@ -1,54 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-07T23:07:14 IST" name="Default suite" finished-at="2022-06-07T23:07:28 IST" duration-ms="14650">
+  <suite started-at="2022-06-08T21:54:36 IST" name="Default suite" finished-at="2022-06-08T21:54:55 IST" duration-ms="19120">
     <groups>
     </groups>
-    <test started-at="2022-06-07T23:07:14 IST" name="Default test" finished-at="2022-06-07T23:07:28 IST" duration-ms="14650">
-      <class name="FrameworkTest.Login">
-        <test-method is-config="true" signature="initialize()[pri:0, instance:FrameworkTest.Login@31aa3ca5]" started-at="2022-06-07T23:07:14 IST" name="initialize" finished-at="2022-06-07T23:07:17 IST" duration-ms="3152" status="PASS">
+    <test started-at="2022-06-08T21:54:36 IST" name="Default test" finished-at="2022-06-08T21:54:55 IST" duration-ms="19120">
+      <class name="com.cricbuzz.tests.HomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.cricbuzz.tests.HomePageTest@5d0a1059]" started-at="2022-06-08T21:54:36 IST" name="setUp" finished-at="2022-06-08T21:54:48 IST" duration-ms="12148" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:FrameworkTest.Login@31aa3ca5]" started-at="2022-06-07T23:07:17 IST" name="login" data-provider="loginData" finished-at="2022-06-07T23:07:28 IST" duration-ms="11423" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[restricted@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[12345]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Restricted user]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchWindowException">
+        </test-method> <!-- setUp -->
+        <test-method signature="schedule()[pri:0, instance:com.cricbuzz.tests.HomePageTest@5d0a1059]" started-at="2022-06-08T21:54:48 IST" name="schedule" finished-at="2022-06-08T21:54:55 IST" duration-ms="6923" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[no such window: window was already closed
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='cb-lv-grn-strip text-bold']/following-sibling::div[@class='cb-col-100 cb-col']/div/div/span[@content='Sri Lanka vs Australia, 2nd T20I']"}
   (Session info: chrome=102.0.5005.61)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.4', revision: '535d840ee2'
-System info: host: 'Yogeshs-MacBook-Air.local', ip: 'fe80:0:0:0:1842:2b85:3ec9:1d7d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.4', java.version: '11.0.13'
+System info: host: 'Yogeshs-MacBook-Air.local', ip: 'fe80:0:0:0:1ca4:69a5:4d5:4bc6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.4', java.version: '11.0.13'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d65d6ab4c94f0e3399fba3dcd7c468f8, findElement {using=xpath, value=//button[text()='NO THANKS']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/pl/l39dwlgd4fx...}, goog:chromeOptions: {debuggerAddress: localhost:50309}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50309/devtoo..., se:cdpVersion: 102.0.5005.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d65d6ab4c94f0e3399fba3dcd7c468f8]]>
+Command: [e71624adbda5ba09f9f472b315bc1fdf, findElement {using=xpath, value=//div[@class='cb-lv-grn-strip text-bold']/following-sibling::div[@class='cb-col-100 cb-col']/div/div/span[@content='Sri Lanka vs Australia, 2nd T20I']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/pl/l39dwlgd4fx...}, goog:chromeOptions: {debuggerAddress: localhost:55312}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55312/devtoo..., se:cdpVersion: 102.0.5005.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e71624adbda5ba09f9f472b315bc1fdf]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: window was already closed
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='cb-lv-grn-strip text-bold']/following-sibling::div[@class='cb-col-100 cb-col']/div/div/span[@content='Sri Lanka vs Australia, 2nd T20I']"}
   (Session info: chrome=102.0.5005.61)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.1.4', revision: '535d840ee2'
-System info: host: 'Yogeshs-MacBook-Air.local', ip: 'fe80:0:0:0:1842:2b85:3ec9:1d7d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.4', java.version: '11.0.13'
+System info: host: 'Yogeshs-MacBook-Air.local', ip: 'fe80:0:0:0:1ca4:69a5:4d5:4bc6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.4', java.version: '11.0.13'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d65d6ab4c94f0e3399fba3dcd7c468f8, findElement {using=xpath, value=//button[text()='NO THANKS']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/pl/l39dwlgd4fx...}, goog:chromeOptions: {debuggerAddress: localhost:50309}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50309/devtoo..., se:cdpVersion: 102.0.5005.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d65d6ab4c94f0e3399fba3dcd7c468f8
+Command: [e71624adbda5ba09f9f472b315bc1fdf, findElement {using=xpath, value=//div[@class='cb-lv-grn-strip text-bold']/following-sibling::div[@class='cb-col-100 cb-col']/div/div/span[@content='Sri Lanka vs Australia, 2nd T20I']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/pl/l39dwlgd4fx...}, goog:chromeOptions: {debuggerAddress: localhost:55312}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:55312/devtoo..., se:cdpVersion: 102.0.5005.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: e71624adbda5ba09f9f472b315bc1fdf
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -64,8 +49,8 @@ at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(Elemen
 at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:385)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:377)
-at pageObject.LandingPage.noThanks(LandingPage.java:25)
-at FrameworkTest.Login.login(Login.java:41)
+at com.cricbuzz.pages.HomePageCricbuzz.link(HomePageCricbuzz.java:23)
+at com.cricbuzz.tests.HomePageTest.schedule(HomePageTest.java:26)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -96,164 +81,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method signature="login(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:FrameworkTest.Login@31aa3ca5]" started-at="2022-06-07T23:07:28 IST" name="login" data-provider="loginData" finished-at="2022-06-07T23:07:28 IST" duration-ms="21" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[nonrestricted@gmail.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[12345]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Non Restricted user]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: window was already closed
-  (Session info: chrome=102.0.5005.61)
-Build info: version: '4.1.4', revision: '535d840ee2'
-System info: host: 'Yogeshs-MacBook-Air.local', ip: 'fe80:0:0:0:1842:2b85:3ec9:1d7d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.4', java.version: '11.0.13'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d65d6ab4c94f0e3399fba3dcd7c468f8, get {url=http://www.qaclickacademy.com/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/pl/l39dwlgd4fx...}, goog:chromeOptions: {debuggerAddress: localhost:50309}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50309/devtoo..., se:cdpVersion: 102.0.5005.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d65d6ab4c94f0e3399fba3dcd7c468f8]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: window was already closed
-  (Session info: chrome=102.0.5005.61)
-Build info: version: '4.1.4', revision: '535d840ee2'
-System info: host: 'Yogeshs-MacBook-Air.local', ip: 'fe80:0:0:0:1842:2b85:3ec9:1d7d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.4', java.version: '11.0.13'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d65d6ab4c94f0e3399fba3dcd7c468f8, get {url=http://www.qaclickacademy.com/}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/pl/l39dwlgd4fx...}, goog:chromeOptions: {debuggerAddress: localhost:50309}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50309/devtoo..., se:cdpVersion: 102.0.5005.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d65d6ab4c94f0e3399fba3dcd7c468f8
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:330)
-at FrameworkTest.Login.login(Login.java:38)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:FrameworkTest.Login@31aa3ca5]" started-at="2022-06-07T23:07:28 IST" name="tearDown" finished-at="2022-06-07T23:07:28 IST" duration-ms="8" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchWindowException">
-            <message>
-              <![CDATA[no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=102.0.5005.61)
-Build info: version: '4.1.4', revision: '535d840ee2'
-System info: host: 'Yogeshs-MacBook-Air.local', ip: 'fe80:0:0:0:1842:2b85:3ec9:1d7d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.4', java.version: '11.0.13'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d65d6ab4c94f0e3399fba3dcd7c468f8, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/pl/l39dwlgd4fx...}, goog:chromeOptions: {debuggerAddress: localhost:50309}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50309/devtoo..., se:cdpVersion: 102.0.5005.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d65d6ab4c94f0e3399fba3dcd7c468f8]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=102.0.5005.61)
-Build info: version: '4.1.4', revision: '535d840ee2'
-System info: host: 'Yogeshs-MacBook-Air.local', ip: 'fe80:0:0:0:1842:2b85:3ec9:1d7d%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.4', java.version: '11.0.13'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [d65d6ab4c94f0e3399fba3dcd7c468f8, close {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/pl/l39dwlgd4fx...}, goog:chromeOptions: {debuggerAddress: localhost:50309}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50309/devtoo..., se:cdpVersion: 102.0.5005.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d65d6ab4c94f0e3399fba3dcd7c468f8
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:567)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:626)
-at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:452)
-at FrameworkTest.Login.tearDown(Login.java:74)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
-at org.testng.TestRunner.afterRun(TestRunner.java:877)
-at org.testng.TestRunner.run(TestRunner.java:599)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+        </test-method> <!-- schedule -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.cricbuzz.tests.HomePageTest@5d0a1059]" started-at="2022-06-08T21:54:55 IST" name="tearDown" finished-at="2022-06-08T21:54:55 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- FrameworkTest.Login -->
+      </class> <!-- com.cricbuzz.tests.HomePageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

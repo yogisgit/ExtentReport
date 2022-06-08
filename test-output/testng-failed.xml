@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="FrameworkTest.Login">
+      <class name="com.cricbuzz.tests.HomePageTest">
         <methods>
-          <include name="login" invocation-numbers="0 1"/>
+          <include name="schedule"/>
           <include name="tearDown"/>
-          <include name="initialize"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- FrameworkTest.Login -->
+      </class> <!-- com.cricbuzz.tests.HomePageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
