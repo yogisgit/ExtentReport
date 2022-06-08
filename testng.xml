@@ -15,6 +15,11 @@
       <class name="FrameworkTest.Login"/>
       </classes>
   </test>
+  <test name="Login">
+    <classes>
+      <class name="com.cricbuzz,tests.HomePageTest"/>
+      </classes>
+  </test>
   <test name="ValidateText">
     <classes>
       <class name="FrameworkTest.ValidateTextLandingPage"/>
